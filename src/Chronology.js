@@ -31,7 +31,6 @@ export class Chronology {
         this.prepareAxes()
         this.chart = this.createChronology()
         this.createAxes()
-        // this.setZoom()
     }
 
     createCanvas() {
@@ -122,59 +121,12 @@ export class Chronology {
         }
     }
 
-    // setZoom() {
-    //     let eventLayer = this.canvas.append('rect')
-    //         .attr('class', 'chrono-events')
-    //         .attr('width', this.width)
-    //         .attr('height', this.height)
-    //         .on('mousemove', this.mouseOver.bind(this))
-
-    //     this.zoomed = () => {
-    //         let scale = d3.event.transform.k;
-    //         this.chart.attr('transform', 'translate(0,' + d3.event.transform.y + ') scale(' + scale + ')');
-    //         this.gY.call(this.yAxis.scale(d3.event.transform.rescaleY(this.yScale)));
-
-    //         // Calculate bounds of current view and reset bar height and position
-    //         let { k, x, y } = d3.zoomIdentity.translate(0, d3.event.transform.y).scale(scale);
-    //         let max = this.yScale.invert(-y / k);
-    //         let min = this.yScale.invert((this.height - y) / k);
-    //         let bars = this.setBars(min, max);
-    //         this.y = y;
-    //         this.k = k;
-    //         d3.selectAll('.chrono-bar')
-    //             .attr('x', this.barOffset / k)
-    //             // .attr('y', d => this.yScale(this.dateParse(d)) * bar.scale)
-    //             .attr('width', (this.xScale(100) - this.barOffset) / k)
-    //             .attr('height', bars.height / k)
-    //     }
-
-    //     let zoom = d3.zoom()
-    //         .scaleExtent([1, 20])
-    //         .translateExtent([[0, 0], [this.width, this.height]])
-    //         .on('zoom', this.zoomed);
-
-    //     eventLayer.call(zoom);
-    // }
-
     // mouseOver() {
     //     let y = d3.mouse(d3.event.currentTarget)[1];
     //     let offset = this.y || 0;
     //     let scale = this.k || 1;
     //     let date = this.yScale.invert((y - offset) / scale);
     //     // this.findEvent(date);
-    // }
-
-    // findEvent(date) {
-    //     let dates = this.data
-    //         .map(d => d.date)
-    //         .filter(m => {
-    //             let diff = date.getTime() - this.dateParse(m).getTime()
-    //             // console.log(diff, this.dateParse(m))
-    //             return ((diff >= -86400000) && (diff <= 0));
-    //         })
-
-    //     let events = this.data.filter(d => d.date === dates[0])
-    //     if (events.length > 0) { console.log(events) }
     // }
 
 }
