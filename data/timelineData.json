@@ -1,0 +1,22 @@
+[
+    {
+        "date": "2017-08-21",
+        "title": "First Timeline Item",
+        "body": "A short note about a thing that happened"
+    },
+    {
+        "date": "2017-08-19",
+        "title": "Second Timeline Item",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Eu scelerisque felis imperdiet proin fermentum leo. Integer enim neque volutpat ac tincidunt vitae semper quis lectus."
+    },
+    {
+        "date": "2017-07-30",
+        "title": "Third Timeline Item",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Eu scelerisque felis imperdiet proin fermentum leo. Integer enim neque volutpat ac tincidunt vitae semper quis lectus."
+    },
+    {
+        "date": "2017-07-13",
+        "title": "Forth Timeline Item",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Eu mi bibendum neque egestas congue. Mauris sit amet massa vitae tortor condimentum lacinia quis."
+    }
+]
